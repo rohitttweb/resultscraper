@@ -56,4 +56,5 @@ while True:
                 file.write(option['value'] + '\n')
                 file.close()
                 list2.append(option['value'])
-    time.sleep(1800)
+            print(list2)
+    time.sleep(10)
