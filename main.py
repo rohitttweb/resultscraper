@@ -3,7 +3,7 @@ import time
 import smtplib
 from bs4 import BeautifulSoup
 
-list = [1072, 1057, 1085, 1033, 1032]
+list = [1072, 1057, 1085, 1033, 1032, 1054]
 list2 = []
 
 file = open('./text.txt', 'r')
