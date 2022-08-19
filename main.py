@@ -57,4 +57,4 @@ while True:
                 file.close()
                 list2.append(option['value'])
             print(list2)
-    time.sleep(20)
+    time.sleep(900)
