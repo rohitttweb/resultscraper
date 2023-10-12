@@ -39,14 +39,14 @@ while True:
         res = soup.find('select', attrs={'id': 'DrpDwnCdetail'})
         for option in res.find_all('option'):
             if option['value'] not in list2:
-                fromaddr = 'rohitmehra76448.1@gmail.com'
-                toaddrs = 'rohitmehra3216@gmail.com'
+                fromaddr = '----'
+                toaddrs = '----'
                 subject = "New result! Alert"
                 message = option.text + ' **Result Announced!** \n\nhttp://result.gndu.ac.in/download/' + option['value'] + '.pdf'
                
                 s = smtplib.SMTP('smtp.gmail.com', 587)
                 s.starttls()
-                s.login(fromaddr, "krerwfkryyfbcssl")
+                s.login(fromaddr, "----")
                 msg = ("From: %s\r\nTo: %s\r\nSubject: %s\n\n%s"
                     % (fromaddr, toaddrs, subject, message))
                 s.sendmail(fromaddr, toaddrs, msg)
